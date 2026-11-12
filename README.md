@@ -1,57 +1,57 @@
-*关于本项目：HGhubX 只是我体验 Tauri2 移动端开发时做的小玩具，开源几天后不知为何收到了大量 star。*
+*Tentang proyek ini: HGhubX awalnya hanyalah proyek kecil yang saya buat untuk mencoba pengembangan aplikasi mobile dengan Tauri 2. Beberapa hari setelah dirilis sebagai proyek open source, entah mengapa proyek ini menerima banyak star.*
 
-*意识到可能存在的潜在危险后，我立刻更换了开源协议为 **PolyForm Noncommercial 1.0.0**，并在 Readme 中写入了大量保护自己的文段。目前 HGhubX 收到的 star 实际上德不配位。*
+*Setelah menyadari adanya potensi risiko, lisensi proyek segera diubah menjadi **PolyForm Noncommercial 1.0.0**, dan README ini dilengkapi dengan berbagai ketentuan perlindungan. Jumlah star yang diterima HGhubX saat ini tidak mencerminkan kualitas atau status resmi proyek ini.*
 
-*在之后的更新中，我不再会维护任何获取上游数据的工作，维护方向将偏重于 UI/UX 与使用体验，同时仍会低频率的响应 PR 与 Issues。如果版权方或其授权代表认为本项目涉及其合法权益，欢迎通过 GitHub 仓库留言联系。收到明确的权利方通知后，我会第一时间积极响应，并根据对方诉求立即归档项目或将仓库转为私有，停止公开访问。*
+*Dalam pembaruan berikutnya, saya tidak lagi akan memelihara fitur untuk mengambil data dari sumber upstream. Fokus pemeliharaan akan beralih ke UI/UX dan pengalaman penggunaan, dengan tetap menanggapi PR dan Issue secara berkala namun tidak sering. Jika pemilik hak cipta atau perwakilannya yang berwenang menganggap proyek ini menyangkut hak mereka, silakan hubungi melalui repositori GitHub. Setelah menerima pemberitahuan yang jelas dari pemilik hak, saya akan segera menindaklanjutinya dan, sesuai permintaan, mengarsipkan proyek atau menjadikan repositori privat sehingga tidak lagi dapat diakses publik.*
 
 <div align="center">
 
 # HGhubX
 
-**HGhubX 第三方短剧客户端 · Rust + Tauri 2**
+**Klien drama pendek pihak ketiga HGhubX · Rust + Tauri 2**
 
-Windows / macOS / Android 三端 · Fluent 设计 · 沉浸式竖屏播放
+Windows / macOS / Android · Desain Fluent · Pemutaran potret imersif
 
 </div>
 
-> ⚠️ 本项目仅供 **学习与技术交流**，不提供、不存储、不分发任何音视频内容。
-> 所有内容均来自第三方站点，版权归原作者与上游站点所有。
+> ⚠️ Proyek ini hanya untuk **pembelajaran dan pertukaran teknis**. Proyek ini tidak menyediakan, menyimpan, atau mendistribusikan konten audio maupun video apa pun.
+> Semua konten berasal dari situs pihak ketiga; hak cipta tetap menjadi milik penulis asli dan situs upstream.
 
-**使用须知**
+**Petunjuk penggunaan**
 
-- **以访客身份正常使用**：像普通访客一样浏览就好，请勿滥用本项目。
-- **不要给上游增加压力**：本项目本身不提供下载功能，请勿改动代码去做批量下载 / 批量抓取，也不要高频轮询、并发轰炸接口或挂机刷播放量；内置的封面与播放列表缓存请不要改小或关掉。
-- **尊重上游版权**：不要去除水印与站点标识，不要把剧集搬运、转码、修改后二次分发到别处（网盘、资源站、其他 App 等），更不能改完拿出去出售。
-- **不要公开传播接口与直链**：接口地址、播放直链、解密方式请勿公开张贴或打包成「资源站」——上游一旦封禁，所有人都没法再用。
-- **不要商业化**：禁止打包出售、接入广告 / 会员 / 付费点播，或作为收费服务的一部分分发（详见 [LICENSE](LICENSE)）。
-- **合理使用**：仅供个人学习、研究与自用；请在 24 小时内删除相关资源，并支持正版。
-- **遵守当地法律**：使用者应自行判断并承担合规责任。
+- **Gunakan secara wajar sebagai tamu**: jelajahi seperti pengunjung biasa dan jangan menyalahgunakan proyek ini.
+- **Jangan membebani upstream**: proyek ini tidak menyediakan fitur unduhan. Jangan mengubah kode untuk melakukan unduhan atau pengambilan data massal, jangan melakukan polling berfrekuensi tinggi, membanjiri API secara bersamaan, atau menjalankan pemutaran otomatis untuk menaikkan jumlah tayangan. Jangan memperkecil atau menonaktifkan cache sampul dan daftar putar bawaan.
+- **Hormati hak cipta upstream**: jangan menghapus watermark atau identitas situs, memindahkan, melakukan transcoding, memodifikasi, lalu mendistribusikan ulang episode ke tempat lain (penyimpanan awan, situs sumber daya, aplikasi lain, dan sebagainya), apalagi menjual hasil modifikasi.
+- **Jangan menyebarkan API dan tautan langsung secara publik**: jangan mempublikasikan alamat API, tautan pemutaran langsung, atau metode dekripsi, maupun mengemasnya menjadi “situs sumber daya”. Jika upstream memblokir akses, semua orang tidak dapat menggunakannya lagi.
+- **Jangan dikomersialkan**: dilarang menjual paket, menambahkan iklan, keanggotaan, atau video berbayar, maupun mendistribusikannya sebagai bagian dari layanan berbayar (lihat [LICENSE](LICENSE)).
+- **Gunakan secara wajar**: hanya untuk pembelajaran, penelitian, dan penggunaan pribadi; hapus sumber daya terkait dalam 24 jam dan dukung konten resmi.
+- **Patuhi hukum setempat**: pengguna bertanggung jawab menilai dan memenuhi kewajiban hukum yang berlaku.
 
-> ⚖️ 许可证自 v1.1.0 版本起改为 **PolyForm Noncommercial 1.0.0**：**禁止任何商业用途**——
-> 包括打包出售、接入付费/会员/广告变现、作为收费产品或服务的一部分分发。
-> 个人学习、研究、自用与非营利使用不受限制，详见 [LICENSE](LICENSE)。
+> ⚖️ Mulai versi v1.1.0, lisensi proyek diubah menjadi **PolyForm Noncommercial 1.0.0**: **segala penggunaan komersial dilarang**—
+> termasuk menjual paket, menambahkan monetisasi berbayar/keanggotaan/iklan, atau mendistribusikannya sebagai bagian dari produk maupun layanan berbayar.
+> Pembelajaran, penelitian, penggunaan pribadi, dan penggunaan nonprofit diperbolehkan; lihat [LICENSE](LICENSE).
 
-## 仿冒提醒
+## Peringatan tentang versi palsu
 
-> 🚫 **已发现的恶意修改版**：[`hichuv/HGhub`](https://github.com/hichuv/HGhub)
+> 🚫 **Versi modifikasi berbahaya yang telah ditemukan**: [`hichuv/HGhub`](https://github.com/hichuv/HGhub)
 >
-> 该仓库与本项目无关，是在旧版本源码基础上擅自加入**卡密验证、VIP 付费解锁**等变现功能的修改版，
-> 代码改动不透明、安全性无法验证。**请勿下载、勿注册、勿付费**；如已安装，建议立即卸载，改用官方 Release 包安装。
+> Repositori tersebut tidak terkait dengan proyek ini. Repositori itu merupakan versi modifikasi dari kode lama yang menambahkan fitur monetisasi seperti **verifikasi kode akses dan pembukaan VIP berbayar**.
+> Perubahan kodenya tidak transparan dan keamanannya tidak dapat diverifikasi. **Jangan mengunduh, mendaftar, atau membayar**; jika sudah terpasang, segera hapus dan gunakan paket resmi dari Release.
 >
-> 本项目**从未、也不会**加入任何卡密 / VIP / 付费解锁 / 广告功能。如果你遇到的「HGhubX」要求输入卡密或付费开通，那一定不是官方版本。
+> Proyek ini **tidak pernah dan tidak akan** menambahkan kode akses, VIP, pembukaan berbayar, atau iklan. Jika “HGhubX” yang Anda gunakan meminta kode akses atau pembayaran, itu bukan versi resmi.
 
-## 免责声明
+## Penafian
 
-- 本项目与内容提供方无任何关联，作者不参与内容的制作、上传与分发。
-- 本项目仅在上述官方渠道发布；任何第三方修改版（尤其是加卡密、VIP 变现的版本）均与作者无关，请自行甄别。
-- 使用者应自行遵守所在地法律法规；因使用本项目产生的任何后果由使用者自行承担。
-- 若相关权利方认为本项目存在侵权，请通过 Issue 联系，我们会及时处理。
+- Proyek ini tidak memiliki hubungan dengan penyedia konten; pengembang tidak terlibat dalam pembuatan, pengunggahan, atau pendistribusian konten.
+- Proyek ini hanya diterbitkan melalui kanal resmi di atas. Semua versi modifikasi pihak ketiga, khususnya versi dengan monetisasi kode akses atau VIP, tidak terkait dengan pengembang; harap memverifikasinya sendiri.
+- Pengguna wajib mematuhi hukum dan peraturan di wilayahnya. Semua konsekuensi yang timbul dari penggunaan proyek ini menjadi tanggung jawab pengguna.
+- Jika pemilik hak terkait menganggap proyek ini melanggar haknya, silakan hubungi melalui Issue dan kami akan menanganinya dengan segera.
 
-## License
+## Lisensi
 
-[PolyForm Noncommercial License 1.0.0](LICENSE) —— **仅限非商业用途**。
+[PolyForm Noncommercial License 1.0.0](LICENSE) — **khusus penggunaan nonkomersial**.
 
-- **允许**：个人学习、研究、自用、爱好项目，以及在非营利组织内部使用；可以自由修改、二次开发。
-- **禁止**：任何商业用途。包括但不限于打包出售、接入付费/会员/广告变现、作为收费服务或商业产品的一部分分发。
-- **保留声明**：分发本项目或其修改版时，必须附带本许可证全文（或上面的链接）以及 `Required Notice` 声明行。
-- 商业授权请通过 Issue 联系作者单独洽谈。
+- **Diizinkan**: pembelajaran pribadi, penelitian, penggunaan pribadi, proyek hobi, dan penggunaan di organisasi nonprofit; proyek boleh dimodifikasi dan dikembangkan lebih lanjut.
+- **Dilarang**: segala penggunaan komersial, termasuk menjual paket, menambahkan monetisasi berbayar/keanggotaan/iklan, atau mendistribusikannya sebagai bagian dari layanan berbayar maupun produk komersial.
+- **Pertahankan pemberitahuan**: ketika mendistribusikan proyek ini atau versinya yang telah dimodifikasi, teks lengkap lisensi (atau tautan di atas) dan baris pemberitahuan `Required Notice` wajib disertakan.
+- Untuk lisensi komersial, hubungi pengembang melalui Issue untuk pembahasan terpisah.
